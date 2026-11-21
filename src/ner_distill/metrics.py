@@ -6,7 +6,7 @@ from .data import LABEL_NAMES
 
 def make_compute_metrics(raw_split, tokenizer, max_length=256):
     encoded = tokenizer(
-        raw_split["tokens"],
+        list(raw_split["tokens"]),
         is_split_into_words=True,
         truncation=True,
         max_length=max_length,
