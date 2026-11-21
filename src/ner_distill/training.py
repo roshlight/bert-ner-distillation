@@ -24,7 +24,7 @@ def create_teacher_trainer(
         per_device_train_batch_size=16,
         per_device_eval_batch_size=32,
         weight_decay=0.01,
-        warmup_ratio=0.1,
+        warmup_steps=260,
         fp16=True,
         eval_strategy="epoch",
         save_strategy="epoch",
